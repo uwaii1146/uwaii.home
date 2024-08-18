@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+body{
+    font-family: "M PLUS Rounded 1c", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #53361c;
+}
+.top,.a{
+    display: flex;
+    gap: 100px;
+}
+.a{
+    border: none;
+    height: 80px;
+    margin: 80px 100px 0 0;
+}
+.world{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    padding: 20px;
+    gap: 70px;
+}
+.mikuru,.pet,.family,.work,.friend,.food{
+    padding: 14px;
+    background-color: #fec18c;
+    border-radius: 20px;
+    border-color: #53361c;
+}
+h1{
+    margin: 70px 0px 70px 0px;
+    border-bottom: #fec18c 6px double;
+}
+h2{
+    border-bottom: solid 2.5px;
+}
+p{
+    top: 12px;
+    bottom: 15px;
+}
+img{
+    border-radius: 15px;
+    width: 350px;
+    height: 350px;
+    border: #ffd2ab 2px solid;
+    border-radius: 30px;
+}
+li{
+    border-bottom: #53361c dashed 2.5px;
+    display: inline;
+    background-color: #ffebd9;
+    grid-template-columns: 40px 40px 40px;
+    font-size: 20px;
+    margin: 40px;
+}
+
+/*スマートフォン用*/
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+        width: 480px;
+        display: block;
+     }
+     .top,.a{
+        display: block;
+     }
+
+     .mikuru,.pet,.family,.work,.friend,.food{
+        margin: 40px;
+        padding: 14px;
+        background-color: #ffd2ab;
+        border-radius: 20px;
+        padding: 30px;
+        border: #53361c solid 2.5px;
+    }
+     h2{
+        border-bottom: solid 2.5px;
+     }
+     .world{
+        display: block;
+        width: 480px;
+     }
+     li{
+        text-align: center;
+        display: flex;
+     }
+     p{
+        width: auto;
+     }
+}
